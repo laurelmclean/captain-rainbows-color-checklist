@@ -69,7 +69,7 @@ def select(function_code):
     elif function_code == "p":
         list_all_items()
 
-    # Update an item at certain index with error checking
+    # Update an item 
     elif function_code == "u":
         item_index = int(user_input("Enter index of item you wish to update: "))
         replace_item = user_input("What item do you wish to replace it with? ")
@@ -82,16 +82,16 @@ def select(function_code):
 
     # Delete an item 
     elif function_code == "d":
-        item_index = int(input("Which index to delete? "))
+        item_index = int(input("Which index do you wish to delete? "))
         destroy(item_index)    
 
     #quit program and stop loop    
     elif function_code == "q":
         return False
 
-    # If users inputs an unredocgnized answer
+    # If users inputs an unrecognized answer
     else:
-        print("Unknown Option")
+        print("You have inputted an unrecognized option. Please try again.")
     return True
 
 
